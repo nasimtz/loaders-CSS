@@ -1,0 +1,26 @@
+body {
+    background: rgb(66, 52, 131);
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 20px solid rgba(255, 255, 255, .3);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    border-top:20px solid #fff;
+    animation: animate 1s infinite linear;
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translate(-50%, -50%)  rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
